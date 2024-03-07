@@ -16,6 +16,11 @@
 		ED7B78E02B99522900DB5AC2 /* LumxTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7B78DF2B99522900DB5AC2 /* LumxTestTests.swift */; };
 		ED7B78EA2B99522900DB5AC2 /* LumxTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7B78E92B99522900DB5AC2 /* LumxTestUITests.swift */; };
 		ED7B78EC2B99522900DB5AC2 /* LumxTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7B78EB2B99522900DB5AC2 /* LumxTestUITestsLaunchTests.swift */; };
+		ED7B78FB2B99534E00DB5AC2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ED7B78FA2B99534E00DB5AC2 /* Alamofire */; };
+		ED7B78FD2B99534E00DB5AC2 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = ED7B78FC2B99534E00DB5AC2 /* AlamofireDynamic */; };
+		ED7B79002B99536000DB5AC2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ED7B78FF2B99536000DB5AC2 /* SnapKit */; };
+		ED7B79022B99536300DB5AC2 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = ED7B79012B99536300DB5AC2 /* SnapKit-Dynamic */; };
+		ED7B79032B99536300DB5AC2 /* SnapKit-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = ED7B79012B99536300DB5AC2 /* SnapKit-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,20 @@
 			remoteInfo = LumxTest;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ED7B79042B99536300DB5AC2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ED7B79032B99536300DB5AC2 /* SnapKit-Dynamic in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		ED7B78C52B99522700DB5AC2 /* LumxTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LumxTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +75,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED7B79002B99536000DB5AC2 /* SnapKit in Frameworks */,
+				ED7B78FB2B99534E00DB5AC2 /* Alamofire in Frameworks */,
+				ED7B78FD2B99534E00DB5AC2 /* AlamofireDynamic in Frameworks */,
+				ED7B79022B99536300DB5AC2 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +106,7 @@
 				ED7B78DE2B99522900DB5AC2 /* LumxTestTests */,
 				ED7B78E82B99522900DB5AC2 /* LumxTestUITests */,
 				ED7B78C62B99522700DB5AC2 /* Products */,
+				ED7B78FE2B99536000DB5AC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +151,13 @@
 			path = LumxTestUITests;
 			sourceTree = "<group>";
 		};
+		ED7B78FE2B99536000DB5AC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,12 +168,19 @@
 				ED7B78C12B99522700DB5AC2 /* Sources */,
 				ED7B78C22B99522700DB5AC2 /* Frameworks */,
 				ED7B78C32B99522700DB5AC2 /* Resources */,
+				ED7B79042B99536300DB5AC2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = LumxTest;
+			packageProductDependencies = (
+				ED7B78FA2B99534E00DB5AC2 /* Alamofire */,
+				ED7B78FC2B99534E00DB5AC2 /* AlamofireDynamic */,
+				ED7B78FF2B99536000DB5AC2 /* SnapKit */,
+				ED7B79012B99536300DB5AC2 /* SnapKit-Dynamic */,
+			);
 			productName = LumxTest;
 			productReference = ED7B78C52B99522700DB5AC2 /* LumxTest.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +253,10 @@
 				Base,
 			);
 			mainGroup = ED7B78BC2B99522700DB5AC2;
+			packageReferences = (
+				ED7B78F82B99533B00DB5AC2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				ED7B78F92B99534E00DB5AC2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = ED7B78C62B99522700DB5AC2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -607,6 +649,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED7B78F82B99533B00DB5AC2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		ED7B78F92B99534E00DB5AC2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED7B78FA2B99534E00DB5AC2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED7B78F92B99534E00DB5AC2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		ED7B78FC2B99534E00DB5AC2 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED7B78F92B99534E00DB5AC2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+		ED7B78FF2B99536000DB5AC2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED7B78F82B99533B00DB5AC2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		ED7B79012B99536300DB5AC2 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED7B78F82B99533B00DB5AC2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ED7B78BD2B99522700DB5AC2 /* Project object */;
 }
