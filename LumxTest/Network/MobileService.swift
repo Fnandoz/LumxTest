@@ -14,20 +14,21 @@ enum MobileService {
 }
 
 extension MobileService {
-    var baseUrl: URL {
-        return URL(string: "")!
+    var baseUrl: String {
+        return "https://api.themoviedb.org/3/"
     }
     
     var path: String {
         switch self {
-        case .getPopularMovies: return ""
-        case .getUpcomingMovies: return ""
-        case .getMovie: return ""
+        case .getPopularMovies: return "movie/popular"
+        case .getUpcomingMovies: return "movie/upcoming"
+        case .getMovie: return "movie/"
         }
     }
     
     var url: URL {
-        return baseUrl.appendingPathExtension(self.path)
+        let stringUrl = "\(baseUrl)\(path)"
+        return URL(string: stringUrl)!
     }
     
     var method: HTTPMethod {
@@ -36,5 +37,12 @@ extension MobileService {
             case .getPopularMovies: return .get
             case .getMovie: return .get
         }
+    }
+    
+    var headers: HTTPHeaders {
+        return [
+            .accept("application/json"),
+            .authorization(bearerToken: "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1N2UwYjRlYWE0MzhjNzZiYzg1MDM5MDJiMzZiMWZlMSIsInN1YiI6IjVkODE3MmY4NWMwNzFiMDAyNTRhNzMwMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.38pGbSm6SEePYKkCf6Diw9iU67uk0JYI7F2dvF4HmxA")
+        ]
     }
 }
