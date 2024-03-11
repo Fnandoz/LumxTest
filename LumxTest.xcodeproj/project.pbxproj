@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ED171A332B9B9E8400311CF8 /* MobileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED171A322B9B9E8400311CF8 /* MobileService.swift */; };
+		ED171A362B9F60B500311CF8 /* MobileServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED171A352B9F60B500311CF8 /* MobileServiceTests.swift */; };
 		ED6515042B9AA0490024A459 /* MovieListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6515032B9AA0490024A459 /* MovieListModel.swift */; };
 		ED6515062B9AA0590024A459 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6515052B9AA0590024A459 /* MovieListViewController.swift */; };
 		ED6515082B9AA06A0024A459 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6515072B9AA06A0024A459 /* MovieListViewModel.swift */; };
@@ -34,21 +35,12 @@
 		ED7B78D22B99522900DB5AC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED7B78D12B99522900DB5AC2 /* Assets.xcassets */; };
 		ED7B78D52B99522900DB5AC2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = ED7B78D42B99522900DB5AC2 /* Base */; };
 		ED7B78E02B99522900DB5AC2 /* LumxTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7B78DF2B99522900DB5AC2 /* LumxTestTests.swift */; };
-		ED7B78EA2B99522900DB5AC2 /* LumxTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7B78E92B99522900DB5AC2 /* LumxTestUITests.swift */; };
-		ED7B78EC2B99522900DB5AC2 /* LumxTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7B78EB2B99522900DB5AC2 /* LumxTestUITestsLaunchTests.swift */; };
 		ED7B78FB2B99534E00DB5AC2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ED7B78FA2B99534E00DB5AC2 /* Alamofire */; };
 		ED7B78FD2B99534E00DB5AC2 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = ED7B78FC2B99534E00DB5AC2 /* AlamofireDynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		ED7B78DC2B99522900DB5AC2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED7B78BD2B99522700DB5AC2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ED7B78C42B99522700DB5AC2;
-			remoteInfo = LumxTest;
-		};
-		ED7B78E62B99522900DB5AC2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ED7B78BD2B99522700DB5AC2 /* Project object */;
 			proxyType = 1;
@@ -72,6 +64,7 @@
 
 /* Begin PBXFileReference section */
 		ED171A322B9B9E8400311CF8 /* MobileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileService.swift; sourceTree = "<group>"; };
+		ED171A352B9F60B500311CF8 /* MobileServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileServiceTests.swift; sourceTree = "<group>"; };
 		ED6515032B9AA0490024A459 /* MovieListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListModel.swift; sourceTree = "<group>"; };
 		ED6515052B9AA0590024A459 /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		ED6515072B9AA06A0024A459 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
@@ -99,9 +92,6 @@
 		ED7B78D62B99522900DB5AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED7B78DB2B99522900DB5AC2 /* LumxTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LumxTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED7B78DF2B99522900DB5AC2 /* LumxTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumxTestTests.swift; sourceTree = "<group>"; };
-		ED7B78E52B99522900DB5AC2 /* LumxTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LumxTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED7B78E92B99522900DB5AC2 /* LumxTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumxTestUITests.swift; sourceTree = "<group>"; };
-		ED7B78EB2B99522900DB5AC2 /* LumxTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumxTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,13 +107,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		ED7B78D82B99522900DB5AC2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ED7B78E22B99522900DB5AC2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -208,7 +191,6 @@
 			children = (
 				ED7B78C72B99522700DB5AC2 /* LumxTest */,
 				ED7B78DE2B99522900DB5AC2 /* LumxTestTests */,
-				ED7B78E82B99522900DB5AC2 /* LumxTestUITests */,
 				ED7B78C62B99522700DB5AC2 /* Products */,
 				ED7B78FE2B99536000DB5AC2 /* Frameworks */,
 			);
@@ -219,7 +201,6 @@
 			children = (
 				ED7B78C52B99522700DB5AC2 /* LumxTest.app */,
 				ED7B78DB2B99522900DB5AC2 /* LumxTestTests.xctest */,
-				ED7B78E52B99522900DB5AC2 /* LumxTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -246,17 +227,9 @@
 			isa = PBXGroup;
 			children = (
 				ED7B78DF2B99522900DB5AC2 /* LumxTestTests.swift */,
+				ED171A352B9F60B500311CF8 /* MobileServiceTests.swift */,
 			);
 			path = LumxTestTests;
-			sourceTree = "<group>";
-		};
-		ED7B78E82B99522900DB5AC2 /* LumxTestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				ED7B78E92B99522900DB5AC2 /* LumxTestUITests.swift */,
-				ED7B78EB2B99522900DB5AC2 /* LumxTestUITestsLaunchTests.swift */,
-			);
-			path = LumxTestUITests;
 			sourceTree = "<group>";
 		};
 		ED7B78FE2B99536000DB5AC2 /* Frameworks */ = {
@@ -311,24 +284,6 @@
 			productReference = ED7B78DB2B99522900DB5AC2 /* LumxTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		ED7B78E42B99522900DB5AC2 /* LumxTestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ED7B78F52B99522900DB5AC2 /* Build configuration list for PBXNativeTarget "LumxTestUITests" */;
-			buildPhases = (
-				ED7B78E12B99522900DB5AC2 /* Sources */,
-				ED7B78E22B99522900DB5AC2 /* Frameworks */,
-				ED7B78E32B99522900DB5AC2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ED7B78E72B99522900DB5AC2 /* PBXTargetDependency */,
-			);
-			name = LumxTestUITests;
-			productName = LumxTestUITests;
-			productReference = ED7B78E52B99522900DB5AC2 /* LumxTestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -343,10 +298,6 @@
 						CreatedOnToolsVersion = 15.3;
 					};
 					ED7B78DA2B99522900DB5AC2 = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = ED7B78C42B99522700DB5AC2;
-					};
-					ED7B78E42B99522900DB5AC2 = {
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = ED7B78C42B99522700DB5AC2;
 					};
@@ -371,7 +322,6 @@
 			targets = (
 				ED7B78C42B99522700DB5AC2 /* LumxTest */,
 				ED7B78DA2B99522900DB5AC2 /* LumxTestTests */,
-				ED7B78E42B99522900DB5AC2 /* LumxTestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -388,13 +338,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		ED7B78D92B99522900DB5AC2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ED7B78E32B99522900DB5AC2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -437,15 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED7B78E02B99522900DB5AC2 /* LumxTestTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ED7B78E12B99522900DB5AC2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ED7B78EC2B99522900DB5AC2 /* LumxTestUITestsLaunchTests.swift in Sources */,
-				ED7B78EA2B99522900DB5AC2 /* LumxTestUITests.swift in Sources */,
+				ED171A362B9F60B500311CF8 /* MobileServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,11 +391,6 @@
 			isa = PBXTargetDependency;
 			target = ED7B78C42B99522700DB5AC2 /* LumxTest */;
 			targetProxy = ED7B78DC2B99522900DB5AC2 /* PBXContainerItemProxy */;
-		};
-		ED7B78E72B99522900DB5AC2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ED7B78C42B99522700DB5AC2 /* LumxTest */;
-			targetProxy = ED7B78E62B99522900DB5AC2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -699,42 +629,6 @@
 			};
 			name = Release;
 		};
-		ED7B78F62B99522900DB5AC2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6VK3DVAF4J;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = salesfg.LumxTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LumxTest;
-			};
-			name = Debug;
-		};
-		ED7B78F72B99522900DB5AC2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6VK3DVAF4J;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = salesfg.LumxTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LumxTest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -761,15 +655,6 @@
 			buildConfigurations = (
 				ED7B78F32B99522900DB5AC2 /* Debug */,
 				ED7B78F42B99522900DB5AC2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ED7B78F52B99522900DB5AC2 /* Build configuration list for PBXNativeTarget "LumxTestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ED7B78F62B99522900DB5AC2 /* Debug */,
-				ED7B78F72B99522900DB5AC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
