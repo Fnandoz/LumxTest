@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED171A332B9B9E8400311CF8 /* MobileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED171A322B9B9E8400311CF8 /* MobileService.swift */; };
 		ED6515042B9AA0490024A459 /* MovieListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6515032B9AA0490024A459 /* MovieListModel.swift */; };
 		ED6515062B9AA0590024A459 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6515052B9AA0590024A459 /* MovieListViewController.swift */; };
 		ED6515082B9AA06A0024A459 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6515072B9AA06A0024A459 /* MovieListViewModel.swift */; };
@@ -16,7 +17,7 @@
 		ED6515122B9AA18B0024A459 /* MovieListUpcomingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6515112B9AA18B0024A459 /* MovieListUpcomingResponse.swift */; };
 		ED6515152B9AA1A60024A459 /* MovieListPopularRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6515142B9AA1A60024A459 /* MovieListPopularRequest.swift */; };
 		ED6515172B9AA1B00024A459 /* MovieListPopularResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6515162B9AA1B00024A459 /* MovieListPopularResponse.swift */; };
-		ED65151A2B9AA1D60024A459 /* LumxTestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6515192B9AA1D60024A459 /* LumxTestService.swift */; };
+		ED65151A2B9AA1D60024A459 /* LumxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6515192B9AA1D60024A459 /* LumxService.swift */; };
 		ED65151C2B9AA2020024A459 /* MovieDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65151B2B9AA2020024A459 /* MovieDetailsModel.swift */; };
 		ED65151E2B9AA20C0024A459 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65151D2B9AA20C0024A459 /* MovieDetailsViewController.swift */; };
 		ED6515202B9AA2230024A459 /* MovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65151F2B9AA2230024A459 /* MovieDetailsViewModel.swift */; };
@@ -24,6 +25,8 @@
 		ED6515242B9AA2380024A459 /* MovieDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6515232B9AA2380024A459 /* MovieDetailsRouter.swift */; };
 		ED6515262B9AA2400024A459 /* MovieDetailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6515252B9AA2400024A459 /* MovieDetailsRequest.swift */; };
 		ED6515282B9AA2470024A459 /* MovieDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6515272B9AA2470024A459 /* MovieDetailsResponse.swift */; };
+		ED65152C2B9AA56C0024A459 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ED65152B2B9AA56C0024A459 /* SnapKit */; };
+		ED65152E2B9AA56C0024A459 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = ED65152D2B9AA56C0024A459 /* SnapKit-Dynamic */; };
 		ED7B78C92B99522700DB5AC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7B78C82B99522700DB5AC2 /* AppDelegate.swift */; };
 		ED7B78CB2B99522700DB5AC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7B78CA2B99522700DB5AC2 /* SceneDelegate.swift */; };
 		ED7B78CD2B99522700DB5AC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7B78CC2B99522700DB5AC2 /* ViewController.swift */; };
@@ -35,9 +38,6 @@
 		ED7B78EC2B99522900DB5AC2 /* LumxTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7B78EB2B99522900DB5AC2 /* LumxTestUITestsLaunchTests.swift */; };
 		ED7B78FB2B99534E00DB5AC2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ED7B78FA2B99534E00DB5AC2 /* Alamofire */; };
 		ED7B78FD2B99534E00DB5AC2 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = ED7B78FC2B99534E00DB5AC2 /* AlamofireDynamic */; };
-		ED7B79002B99536000DB5AC2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ED7B78FF2B99536000DB5AC2 /* SnapKit */; };
-		ED7B79022B99536300DB5AC2 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = ED7B79012B99536300DB5AC2 /* SnapKit-Dynamic */; };
-		ED7B79032B99536300DB5AC2 /* SnapKit-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = ED7B79012B99536300DB5AC2 /* SnapKit-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				ED7B79032B99536300DB5AC2 /* SnapKit-Dynamic in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +71,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		ED171A322B9B9E8400311CF8 /* MobileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileService.swift; sourceTree = "<group>"; };
 		ED6515032B9AA0490024A459 /* MovieListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListModel.swift; sourceTree = "<group>"; };
 		ED6515052B9AA0590024A459 /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		ED6515072B9AA06A0024A459 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 		ED6515112B9AA18B0024A459 /* MovieListUpcomingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListUpcomingResponse.swift; sourceTree = "<group>"; };
 		ED6515142B9AA1A60024A459 /* MovieListPopularRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPopularRequest.swift; sourceTree = "<group>"; };
 		ED6515162B9AA1B00024A459 /* MovieListPopularResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPopularResponse.swift; sourceTree = "<group>"; };
-		ED6515192B9AA1D60024A459 /* LumxTestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumxTestService.swift; sourceTree = "<group>"; };
+		ED6515192B9AA1D60024A459 /* LumxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumxService.swift; sourceTree = "<group>"; };
 		ED65151B2B9AA2020024A459 /* MovieDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsModel.swift; sourceTree = "<group>"; };
 		ED65151D2B9AA20C0024A459 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		ED65151F2B9AA2230024A459 /* MovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -109,10 +109,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED7B79002B99536000DB5AC2 /* SnapKit in Frameworks */,
+				ED65152C2B9AA56C0024A459 /* SnapKit in Frameworks */,
 				ED7B78FB2B99534E00DB5AC2 /* Alamofire in Frameworks */,
 				ED7B78FD2B99534E00DB5AC2 /* AlamofireDynamic in Frameworks */,
-				ED7B79022B99536300DB5AC2 /* SnapKit-Dynamic in Frameworks */,
+				ED65152E2B9AA56C0024A459 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +133,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED171A312B9B9E6B00311CF8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ED171A322B9B9E8400311CF8 /* MobileService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		ED6515012B9AA0270024A459 /* MovieList */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,7 +191,7 @@
 		ED6515182B9AA1BC0024A459 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				ED6515192B9AA1D60024A459 /* LumxTestService.swift */,
+				ED6515192B9AA1D60024A459 /* LumxService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -222,6 +230,7 @@
 				ED6515022B9AA02F0024A459 /* MovieDetails */,
 				ED6515012B9AA0270024A459 /* MovieList */,
 				ED6515182B9AA1BC0024A459 /* Service */,
+				ED171A312B9B9E6B00311CF8 /* Network */,
 				ED7B78C82B99522700DB5AC2 /* AppDelegate.swift */,
 				ED7B78CA2B99522700DB5AC2 /* SceneDelegate.swift */,
 				ED7B78CC2B99522700DB5AC2 /* ViewController.swift */,
@@ -277,8 +286,8 @@
 			packageProductDependencies = (
 				ED7B78FA2B99534E00DB5AC2 /* Alamofire */,
 				ED7B78FC2B99534E00DB5AC2 /* AlamofireDynamic */,
-				ED7B78FF2B99536000DB5AC2 /* SnapKit */,
-				ED7B79012B99536300DB5AC2 /* SnapKit-Dynamic */,
+				ED65152B2B9AA56C0024A459 /* SnapKit */,
+				ED65152D2B9AA56C0024A459 /* SnapKit-Dynamic */,
 			);
 			productName = LumxTest;
 			productReference = ED7B78C52B99522700DB5AC2 /* LumxTest.app */;
@@ -353,8 +362,8 @@
 			);
 			mainGroup = ED7B78BC2B99522700DB5AC2;
 			packageReferences = (
-				ED7B78F82B99533B00DB5AC2 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				ED7B78F92B99534E00DB5AC2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				ED65152A2B9AA56B0024A459 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = ED7B78C62B99522700DB5AC2 /* Products */;
 			projectDirPath = "";
@@ -403,9 +412,10 @@
 				ED6515122B9AA18B0024A459 /* MovieListUpcomingResponse.swift in Sources */,
 				ED6515042B9AA0490024A459 /* MovieListModel.swift in Sources */,
 				ED6515062B9AA0590024A459 /* MovieListViewController.swift in Sources */,
-				ED65151A2B9AA1D60024A459 /* LumxTestService.swift in Sources */,
+				ED65151A2B9AA1D60024A459 /* LumxService.swift in Sources */,
 				ED65151E2B9AA20C0024A459 /* MovieDetailsViewController.swift in Sources */,
 				ED7B78CD2B99522700DB5AC2 /* ViewController.swift in Sources */,
+				ED171A332B9B9E8400311CF8 /* MobileService.swift in Sources */,
 				ED6515262B9AA2400024A459 /* MovieDetailsRequest.swift in Sources */,
 				ED6515152B9AA1A60024A459 /* MovieListPopularRequest.swift in Sources */,
 				ED6515202B9AA2230024A459 /* MovieDetailsViewModel.swift in Sources */,
@@ -767,7 +777,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		ED7B78F82B99533B00DB5AC2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		ED65152A2B9AA56B0024A459 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -786,6 +796,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		ED65152B2B9AA56C0024A459 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED65152A2B9AA56B0024A459 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		ED65152D2B9AA56C0024A459 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED65152A2B9AA56B0024A459 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
 		ED7B78FA2B99534E00DB5AC2 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = ED7B78F92B99534E00DB5AC2 /* XCRemoteSwiftPackageReference "Alamofire" */;
@@ -795,16 +815,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = ED7B78F92B99534E00DB5AC2 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = AlamofireDynamic;
-		};
-		ED7B78FF2B99536000DB5AC2 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ED7B78F82B99533B00DB5AC2 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		ED7B79012B99536300DB5AC2 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ED7B78F82B99533B00DB5AC2 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
