@@ -1,5 +1,5 @@
 //
-//  MovieCoverView.swift
+//  MovieCoverViewCell.swift
 //  LumxTest
 //
 //  Created by Fernando on 11/03/24.
@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 class MovieCoverViewCell: UICollectionViewCell {
-    private static let reuseIdentifier = "MovieCoverViewCell"
+    static let reuseIdentifier = "MovieCoverViewCell"
     
     lazy var containerView: UIView = {
         let view = UIView()
