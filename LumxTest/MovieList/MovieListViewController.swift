@@ -2,7 +2,28 @@
 //  MovieListViewController.swift
 //  LumxTest
 //
-//  Created by Fernando on 07/03/24.
+//  Created by Fernando on 11/03/24.
 //
 
-import Foundation
+import UIKit
+
+class MovieListViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
