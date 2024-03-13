@@ -64,8 +64,8 @@ class MovieCoverViewCell: UICollectionViewCell {
         
         coverImage.snp.makeConstraints {
             $0.top.leading.trailing.equalToSuperview()
-            $0.width.equalTo(160)
-            $0.height.equalTo(180)
+            $0.width.equalTo(140)
+            $0.height.equalTo(160)
         }
         
         releaseDateLabel.snp.makeConstraints {
