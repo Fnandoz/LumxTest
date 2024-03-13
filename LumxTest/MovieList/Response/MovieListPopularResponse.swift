@@ -7,4 +7,6 @@
 
 import Foundation
 
-struct MovieListPopularResponse {}
+struct MovieListPopularResponse: Codable {
+    let results: [MovieModel]?
+}
