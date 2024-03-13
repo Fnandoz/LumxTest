@@ -19,11 +19,25 @@ class MovieListViewController: UIViewController {
         collectionView.register(MovieCoverViewCell.self, forCellWithReuseIdentifier: MovieCoverViewCell.reuseIdentifier)
         setupReactors()
         viewModel?.viewDidLoad()
-
+        setupViewForUpcomingMovies()
     }
 
     @IBAction func didChangeSegmentControl(_ sender: UISegmentedControl) {
-        
+        switch sender.selectedSegmentIndex {
+        case 0: setupViewForUpcomingMovies()
+        case 1: setupViewForPopularMovies()
+        default: setupViewForUpcomingMovies()
+        }
+    }
+    
+    private func setupViewForUpcomingMovies() {
+        viewModel?.fetchUpcomingMovies()
+        titleLabel.text = "Upcoming Movies"
+    }
+    
+    private func setupViewForPopularMovies() {
+        viewModel?.fetchPopularMovies()
+        titleLabel.text = "Popular Movies"
     }
 }
 

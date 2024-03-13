@@ -29,7 +29,6 @@ class MovieListViewModel {
     }
     
     func viewDidLoad() {
-        fetchUpcomingMovies()
     }
     
     func fetchUpcomingMovies() {
