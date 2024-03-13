@@ -40,6 +40,8 @@
 		ED9F81B82B9FE9BB0076FD4C /* MovieListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED9F81B62B9FE9BB0076FD4C /* MovieListViewController.xib */; };
 		ED9F81BB2BA088F50076FD4C /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F81BA2BA088F50076FD4C /* BaseRouter.swift */; };
 		ED9F81BD2BA11FD30076FD4C /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F81BC2BA11FD30076FD4C /* MovieModel.swift */; };
+		ED9F81C32BA131A50076FD4C /* MovieListViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F81C22BA131A50076FD4C /* MovieListViewControllerSpy.swift */; };
+		ED9F81C72BA1328D0076FD4C /* MovieListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F81C62BA1328D0076FD4C /* MovieListTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,8 @@
 		ED9F81B62B9FE9BB0076FD4C /* MovieListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieListViewController.xib; sourceTree = "<group>"; };
 		ED9F81BA2BA088F50076FD4C /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		ED9F81BC2BA11FD30076FD4C /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		ED9F81C22BA131A50076FD4C /* MovieListViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewControllerSpy.swift; sourceTree = "<group>"; };
+		ED9F81C62BA1328D0076FD4C /* MovieListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +238,7 @@
 		ED7B78DE2B99522900DB5AC2 /* LumxTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				ED9F81C12BA131730076FD4C /* MovieList */,
 				ED7B78DF2B99522900DB5AC2 /* LumxTestTests.swift */,
 				ED171A352B9F60B500311CF8 /* MobileServiceTests.swift */,
 			);
@@ -262,6 +267,15 @@
 				ED9F81BC2BA11FD30076FD4C /* MovieModel.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		ED9F81C12BA131730076FD4C /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				ED9F81C22BA131A50076FD4C /* MovieListViewControllerSpy.swift */,
+				ED9F81C62BA1328D0076FD4C /* MovieListTests.swift */,
+			);
+			path = MovieList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,6 +422,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED7B78E02B99522900DB5AC2 /* LumxTestTests.swift in Sources */,
+				ED9F81C32BA131A50076FD4C /* MovieListViewControllerSpy.swift in Sources */,
+				ED9F81C72BA1328D0076FD4C /* MovieListTests.swift in Sources */,
 				ED171A362B9F60B500311CF8 /* MobileServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
