@@ -104,6 +104,7 @@
 		ED9F81C22BA131A50076FD4C /* MovieListViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewControllerSpy.swift; sourceTree = "<group>"; };
 		ED9F81C62BA1328D0076FD4C /* MovieListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTests.swift; sourceTree = "<group>"; };
 		ED9F81CA2BA134F10076FD4C /* MovieModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModelMock.swift; sourceTree = "<group>"; };
+		ED9F81CC2BA138AF0076FD4C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +204,7 @@
 		ED7B78BC2B99522700DB5AC2 = {
 			isa = PBXGroup;
 			children = (
+				ED9F81CC2BA138AF0076FD4C /* README.md */,
 				ED7B78C72B99522700DB5AC2 /* LumxTest */,
 				ED7B78DE2B99522900DB5AC2 /* LumxTestTests */,
 				ED7B78C62B99522700DB5AC2 /* Products */,
