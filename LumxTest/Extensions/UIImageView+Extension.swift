@@ -11,10 +11,9 @@ import UIKit
 
 extension UIImageView {
     func loadFromUrl(_ url: String) {
-        AF.request(url, method: .get)
+        AF.request("https://image.tmdb.org/t/p/original\(url)", method: .get)
             .response { response in
                 guard let data = response.data, response.error == nil else {
-                    // self.image = UIImage("default")
                     return
                 }
                 self.image = UIImage(data: data, scale: 1)
